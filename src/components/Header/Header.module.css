@@ -140,6 +140,18 @@
   }
 }
 
+@media (max-width: 700px) {
+  .menu.active {
+    flex-direction: column;
+    border-radius: 16px 0 0 0;
+  }
+
+  .search {
+    top: 413.5px;
+    border-radius: 16px 0 0 16px;
+  }
+}
+
 @keyframes showMenu {
   from {
     opacity: 0;
