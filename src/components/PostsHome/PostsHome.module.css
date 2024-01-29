@@ -4,6 +4,8 @@
   justify-items: center;
   gap: 2rem;
   padding: 0 1rem;
+  margin-bottom: 3rem;
+  min-height: 500px;
 }
 
 .post {
