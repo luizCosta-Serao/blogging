@@ -7,27 +7,8 @@ import styles from './Header.module.css'
 const Header = () => {
   const [menuMobile, setMenuMobile] = React.useState(false)
 
-  /*
-  React.useEffect(() => {
-    const media = window.matchMedia('(max-width: 1200px)')
-    function handleResize() {
-      if(media.matches) {
-        setMenuMobile(true)
-      } else {
-        setMenuMobile(false)
-      }
-    }
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  })
-  */
-
   function handleChange() {
     setMenuMobile((menuMobile) => !menuMobile)
-    console.log(menuMobile)
   }
 
   return (
