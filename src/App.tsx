@@ -3,11 +3,12 @@ import './App.css'
 import Header from './components/Header/Header'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
+import { PostsContextProvider } from './context/PostsContext'
 
 function App() {
 
   return (
-    <React.Fragment>
+    <PostsContextProvider>
       <div className='bg-effect'></div>
       <BrowserRouter>
         <Header />
@@ -15,7 +16,7 @@ function App() {
           <Route path='/' element={<Home />} />
         </Routes>
       </BrowserRouter>
-    </React.Fragment>
+    </PostsContextProvider>
   )
 }
 
