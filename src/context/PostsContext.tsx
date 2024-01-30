@@ -1,8 +1,11 @@
 import React, { PropsWithChildren } from 'react'
-import useFetch from '../hooks/useFetch';
 
 type PostsContext = {
-  data: null | FetchPosts;
+  showPosts: (limit: number) => Promise<void>;
+  posts: FetchPosts | null;
+  loading: boolean;
+  error: string | null;
+  prevPosts: FetchPosts | null;
 }
 
 export type DataPosts = {
@@ -40,15 +43,39 @@ export const PostsContextProvider = ({
   children
 }: PropsWithChildren) => {
 
-  const { data, loading, error } = useFetch<FetchPosts>('https://dummyapi.io/data/v1/post?limit=9', {
-    method: 'GET',
-    headers: {
-      'app-id': '65b29d2939a4e031164e10a7'
+  const [posts, setPosts] = React.useState<FetchPosts | null>(null)
+  const [loading, setLoading] = React.useState(false)
+  const [error, setError] = React.useState<string | null>(null)
+  const [prevPosts, setPrevPosts] = React.useState<FetchPosts | null>(null)
+
+  const showPosts = async (limit: number) => {
+    setLoading(true)
+    setPosts(null)
+    try {
+      const response = await fetch(`https://dummyapi.io/data/v1/post?limit=${limit}`, {
+        method: 'GET',
+        headers: {
+          'app-id': '65b29d2939a4e031164e10a7'
+        }
+      })
+      if(!response.ok) throw new Error(`Error: ${response.status}`)
+      const json = (await response.json()) as FetchPosts
+      setPosts(json)
+      sessionStorage.setItem('posts', JSON.stringify(json))
+      setPrevPosts(JSON.parse(sessionStorage.getItem('posts') ?? '{}'))
+    } catch (error) {
+      if(error instanceof Error) setError(error.message)
+    } finally {
+      setLoading(false)
     }
-  })
+  }
 
   const value = {
-    data
+    showPosts,
+    posts,
+    loading,
+    error,
+    prevPosts
   }
 
   return (
