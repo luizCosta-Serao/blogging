@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
-  background-image: url('../assets/banner-community.jpg');
+  background-image: url('../../assets/banner-community.jpg');
   background-size: cover;
   background-position: center;
   height: 500px;
