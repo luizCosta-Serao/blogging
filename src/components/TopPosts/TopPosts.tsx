@@ -15,18 +15,18 @@ const TopPosts = () => {
 
   React.useEffect(() => {
     if (contentRef.current && posts) {
-      setPosition(-((contentRef.current.offsetWidth + 16) * active))
+      setPosition(-(contentRef.current.offsetWidth * active))
     }
   }, [active, posts])
 
   function slideNext() {
-    if (posts && active < (posts?.data.length - 1) / 2) {
+    if (contentRef.current && posts && position > -((contentRef.current?.offsetWidth * posts.data.length) - (window.innerWidth - contentRef.current.offsetWidth / 2))) {
       setActive(active + 1)
     }
   }
 
   function slidePrev() {
-    if (active > 0) {
+    if (posts && contentRef.current && active > 0) {
       setActive(active - 1)
     }
   }
