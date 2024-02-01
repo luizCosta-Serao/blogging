@@ -6,7 +6,7 @@
 
 .topPosts {
   display: flex;
-  gap: 3.5rem;
+  gap: 1.5rem;
   grid-template-columns: repeat(5, 1fr);
   position: relative;
   transition: transform .3s ease;
@@ -16,11 +16,9 @@
 .item {
   flex-shrink: 0;
   width: 350px;
-  position: relative;
   display: grid;
   justify-items: center;
   align-items: center;
-  transform: translateX();
   transition: .3s;
 }
 
