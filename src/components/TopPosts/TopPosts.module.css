@@ -4,6 +4,24 @@
   margin: 3rem auto;
 }
 
+.container > h1 {
+  font-size: 1.5rem;
+  color: #121416;
+  line-height: 1.7;
+  margin-bottom: .5rem;
+  text-decoration: underline;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.container > p {
+  font-size: 1.2rem;
+  color: #121416;
+  text-align: center;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
 .topPosts {
   display: flex;
   gap: 1.5rem;
