@@ -21,7 +21,7 @@ const TopPosts = () => {
 
   function slideNext() {
     if (contentRef.current && posts && position > -((contentRef.current?.offsetWidth * posts.data.length) - (window.innerWidth - contentRef.current.offsetWidth / 2))) {
-      setActive(active + 1)
+      setActive(active + .5)
     }
   }
 
