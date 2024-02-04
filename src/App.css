@@ -4,13 +4,6 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  height: 410px;
-  display: block;
-  width: 100%;
-  background-size: 100% 226%;
-  background-position: center right;
-  background-image: url('./assets/banner-home.jpg');
-  background-repeat: no-repeat;
 }
 
 .bg-effect {
@@ -48,22 +41,4 @@ a {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-}
-
-@media (max-width: 1200px) {
-  body {
-    background-size: 150% 226%;
-  }
-}
-
-@media (max-width: 700px) {
-  body {
-    background-size: 250% 226%;
-  }
-}
-
-@media (max-width: 500px) {
-  body {
-    background-size: 300% 226%;
-  }
 }

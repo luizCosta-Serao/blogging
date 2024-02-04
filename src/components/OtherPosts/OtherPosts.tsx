@@ -2,6 +2,7 @@ import React from 'react'
 import { FetchPosts } from '../../context/PostsContext'
 import Loading from '../Loading/Loading'
 import styles from './OtherPosts.module.css'
+import { Link } from 'react-router-dom'
 
 const OtherPosts = () => {
 
@@ -48,17 +49,23 @@ const OtherPosts = () => {
       <div className={styles.leftPosts}>
         <div className={styles.posts}>
           <div className={styles.mainPost}>
-            <img src={posts.data[0].image} alt="" />
+            <Link to={`/post/${posts.data[0].id}`}>
+              <img src={posts.data[0].image} alt="" />
+            </Link>
             <span>{posts.data[0].publishDate.split('T')[0]}</span>
             <h1>{posts.data[0].text}</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quae culpa eveniet qui voluptates odit doloremque id obcaecati porro, atque voluptatem quos beatae placeat sed omnis soluta tenetur provident aspernatur.</p>
-            <button>View Post</button>
+            <Link to={`/post/${posts.data[0].id}`}>
+              <button>View Post</button>
+            </Link>
           </div>
         </div>
         <ul className={styles.listPosts}>
           {posts.data.filter((post) => post.tags.includes(tag)).map((post) => (
             <li key={post.id} className={styles.post}>
-              <img src={post.image} alt="" />
+              <Link to={`/post/${post.id}`}>
+                <img src={post.image} alt="" />
+              </Link>
               <div>
                 <h2>{post.text}</h2>
                 <span>{post.publishDate.split('T')[0]}</span>
@@ -71,7 +78,9 @@ const OtherPosts = () => {
         <h1>Manga reads</h1>
         {posts.data.filter((post) => post.tags.includes('canine')).map((post) => (
           <div key={post.id} className={styles.mangaReads}>
-            <img src={post.image} alt="" />
+            <Link to={`/post/${post.id}`}>
+              <img src={post.image} alt="" />
+            </Link>
             <div>
               <h2>{post.text}</h2>
               <span>{post.publishDate.split('T')[0]}</span>

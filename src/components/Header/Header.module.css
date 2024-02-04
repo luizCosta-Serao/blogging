@@ -1,3 +1,15 @@
+.bannerHome {
+  background-size: 100% 226%;
+  background-position: center right;
+  background-image: url('../../assets/banner-home.jpg');
+  background-repeat: no-repeat;
+  height: 94.7vh;
+  display: block;
+  width: 100%;
+  position: absolute;
+
+}
+
 .header  {
   display: flex;
   flex-wrap: wrap;
@@ -154,7 +166,17 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .bannerHome {
+    background-size: 150% 226%;
+  }
+}
+
 @media (max-width: 700px) {
+  .bannerHome {
+    background-size: 250% 226%;
+  }
+
   .menu.active {
     flex-direction: column;
     border-radius: 16px 0 0 0;
@@ -163,6 +185,12 @@
   .search {
     top: 413.5px;
     border-radius: 16px 0 0 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bannerHome {
+    background-size: 300% 226%;
   }
 }
 

@@ -25,10 +25,31 @@ export type DataPosts = {
 }
 
 export type FetchPosts = {
-  data: DataPosts[],
+  data: DataPosts[];
   total: number;
   page: number;
   limit: number
+}
+
+export type DataComments = {
+  id: string;
+  message: string;
+  owner: {
+    firstName: string;
+    id: string;
+    lastName: string;
+    picture: string;
+    title: string;
+  };
+  post: string;
+  publishDate: string;
+}
+
+export type FetchComments = {
+  data: DataComments[];
+  total: number;
+  page: number;
+  limit: number;
 }
 
 const PostsContext = React.createContext<PostsContext | null>(null)
