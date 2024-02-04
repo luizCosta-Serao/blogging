@@ -13,6 +13,10 @@
   margin-bottom: 2rem;
 }
 
+.post a {
+  width: 100%;
+}
+
 .image {
   height: 400px;
   object-fit: cover;

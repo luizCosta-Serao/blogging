@@ -44,6 +44,10 @@
   max-width: 400px;
 }
 
+.mainPost a {
+  width: 100%;
+}
+
 .mainPost img {
   width: 100%;
   max-width: 600px;
@@ -117,6 +121,11 @@
   max-width: 500px;
 }
 
+.post a {
+  width: 100%;
+  max-width: 100px;
+}
+
 .post img {
   width: 105px;
   height: 70px;
@@ -163,6 +172,11 @@
 .mangaReads {
   display: flex;
   gap: 1rem;
+}
+
+.mangaReads a {
+  width: 100%;
+  max-width: 100px;
 }
 
 .mangaReads img {

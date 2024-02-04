@@ -1,7 +1,8 @@
 import React from 'react'
-import { FetchPosts, usePosts } from '../../context/PostsContext'
+import { FetchPosts } from '../../context/PostsContext'
 import styles from './PostsHome.module.css'
 import Loading from '../Loading/Loading'
+import { Link } from 'react-router-dom'
 
 const PostsHome = () => {
   const [posts, setPosts] = React.useState<FetchPosts | null>(null)
@@ -59,14 +60,18 @@ const PostsHome = () => {
     <main className={`${styles.posts} container`}>
       {posts.data.map((item) => (
         <div className={styles.post} key={item.id}>
-          <img className={styles.image} src={item.image} alt="" />
+          <Link to={`/post/${item.id}`}>
+            <img className={styles.image} src={item.image} alt="" />
+          </Link>
           <h1 className={styles.title}>{item.text}</h1>
           <div className={styles.user}>
             <img src={item.owner.picture} alt="" />
             <span>{item.owner.firstName} {item.owner.lastName}</span>
           </div>
           <p className={styles.text}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, quas reiciendis! Facilis a soluta aliquam sit, labore nulla accusamus sed ut assumenda, qui ad molestiae officia repellendus ab ea magnam.</p>
-          <button className={styles.viewPost}>View Post</button>
+          <Link to={`/post/${item.id}`}>
+            <button className={styles.viewPost}>View Post</button>
+          </Link>
         </div>
       ))}
       <button

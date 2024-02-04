@@ -2,6 +2,7 @@ import React from 'react'
 import { FetchPosts } from '../../context/PostsContext'
 import Loading from '../Loading/Loading'
 import styles from './TopPosts.module.css'
+import { Link } from 'react-router-dom'
 
 const TopPosts = () => {
 
@@ -22,6 +23,7 @@ const TopPosts = () => {
   function slideNext() {
     if (contentRef.current && posts && position > -((contentRef.current?.offsetWidth * posts.data.length) - (window.innerWidth - contentRef.current.offsetWidth / 2))) {
       setActive(active + .5)
+      console.log(-((contentRef.current?.offsetWidth * posts.data.length) - (window.innerWidth - contentRef.current.offsetWidth / 2)))
     }
   }
 
@@ -64,10 +66,12 @@ const TopPosts = () => {
       <p>Tick one more destination off of your bucket list with one of our most popuar vacations in 2024</p>
       <div style={{transform: `translateX(${position}px)`}} className={styles.topPosts}>
         {posts && posts.data.map((item) => (
-          <div ref={contentRef} className={styles.item} key={item.id}>
-            <img src={item.image} alt="" />
-            <h2>{item.text}</h2>
-          </div>
+          <Link to={`/post/${item.id}`} key={item.id}>
+            <div ref={contentRef} className={styles.item}>
+              <img src={item.image} alt="" />
+              <h2>{item.text}</h2>
+            </div>
+          </Link>
         ))}
       </div>
       <div className={styles.controls}>
