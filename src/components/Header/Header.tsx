@@ -19,25 +19,23 @@ const Header = () => {
         <div className={styles.logo}>
           <Link to='/'><img src={Logo} alt="Logo" /></Link>
         </div>
-        <nav>
-          <div onClick={handleChange}>
-            <button className={styles.btnMenuMobile}></button>
-          </div>
-          <ul className={`${styles.menu} ${menuMobile ? styles.active : ''}`}>
-            <li><Link to='/destinations'>Destinations</Link></li>
-            <li><Link to='/food'>Food</Link></li>
-            <li><Link to='/wellbeing'>Well Being</Link></li>
-            <li><Link to='/sport'>Sport</Link></li>
-            <li><Link to='/family'>Family</Link></li>
-            <li><Link to='/lifestyle'>Lifestyle</Link></li>
-          </ul>
-        </nav>
-        <div className={`${styles.search} ${menuMobile ? styles.active : ''}`}>
-          <div className={styles.loupe}>
-            <img src={Loupe} alt="Loupe" />
-          </div>
-          <div className={styles.descount}>
-            <button>Get your 120$ christmas gift</button>
+        <div className={styles.menuAndLoupe}>
+          <nav>
+            <div onClick={handleChange}>
+              <button className={styles.btnMenuMobile}></button>
+            </div>
+            <ul className={`${styles.menu} ${menuMobile ? styles.active : ''}`}>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/human'>With Humans</Link></li>
+              <li><Link to='/pet'>Pet</Link></li>
+              <li><Link to='/mammal'>Mammal</Link></li>
+              <li><Link to='/canine'>Canine</Link></li>
+            </ul>
+          </nav>
+          <div className={`${styles.search}`}>
+            <div className={styles.loupe}>
+              <img src={Loupe} alt="Loupe" />
+            </div>
           </div>
         </div>
       </header>
