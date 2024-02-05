@@ -26,10 +26,14 @@
   transition: .4s;
 }
 
+.category > li.active {
+  background-color: #121416;
+  color: #fff;
+}
+
 .category > li:hover {
   background-color: #121416;
   color: #fff;
-  border-radius: 1rem;
 }
 
 .leftPosts {

@@ -59,6 +59,10 @@
   color: #000;
 }
 
+.menu li a.active {
+  color: #000;
+}
+
 .search {
   display: flex;
   gap: 10px;
