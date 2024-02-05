@@ -111,23 +111,6 @@
   background-color: #444;
 }
 
-.loadMore {
-  border: 2px solid #121416;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 1rem;
-  background-color: transparent;
-  display: flex;
-  margin: 2rem auto;
-  cursor: pointer;
-  transition: .4st;
-}
-
-.loadMore:hover {
-  background-color: #121416;
-  color: #fff;
-}
-
 @media (max-width: 1200px) {
   .posts {
     grid-template-columns: 1fr 1fr;
