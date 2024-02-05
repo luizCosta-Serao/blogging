@@ -54,7 +54,7 @@ const OtherPosts = () => {
             </Link>
             <span>{posts.data[0].publishDate.split('T')[0]}</span>
             <h1>{posts.data[0].text}</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quae culpa eveniet qui voluptates odit doloremque id obcaecati porro, atque voluptatem quos beatae placeat sed omnis soluta tenetur provident aspernatur.</p>
+            <p>Em um mundo cheio de agitação, nada se compara à serenidade que um amigo peludo pode trazer para nossas vidas. Cães, esses seres incríveis, têm o dom de nos fazer sorrir nos dias mais cinzentos e preencher nossos corações com amor incondicional.</p>
             <Link to={`/post/${posts.data[0].id}`}>
               <button>View Post</button>
             </Link>

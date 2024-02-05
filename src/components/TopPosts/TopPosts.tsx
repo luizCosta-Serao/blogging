@@ -63,7 +63,7 @@ const TopPosts = () => {
   return (
     <section className={styles.container}>
       <h1>Top Posts</h1>
-      <p>Tick one more destination off of your bucket list with one of our most popuar vacations in 2024</p>
+      <p>Discover heartwarming stories, helpful tips, and irresistible moments of canine joy</p>
       <div style={{transform: `translateX(${position}px)`}} className={styles.topPosts}>
         {posts && posts.data.map((item) => (
           <Link to={`/post/${item.id}`} key={item.id}>
