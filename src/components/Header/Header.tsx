@@ -25,11 +25,11 @@ const Header = () => {
               <button className={styles.btnMenuMobile}></button>
             </div>
             <ul className={`${styles.menu} ${menuMobile ? styles.active : ''}`}>
-              <li><Link to='/'>Home</Link></li>
-              <li><Link to='/human'>With Humans</Link></li>
-              <li><Link to='/pet'>Pet</Link></li>
-              <li><Link to='/mammal'>Mammal</Link></li>
-              <li><Link to='/canine'>Canine</Link></li>
+              <li><Link className={pathname === '/' ? styles.active : ''} to='/'>Home</Link></li>
+              <li><Link className={pathname === '/human' ? styles.active : ''} to='/human'>With Humans</Link></li>
+              <li><Link className={pathname === '/pet' ? styles.active : ''} to='/pet'>Pet</Link></li>
+              <li><Link className={pathname === '/mammal' ? styles.active : ''} to='/mammal'>Mammal</Link></li>
+              <li><Link className={pathname === '/canine' ? styles.active : ''} to='/canine'>Canine</Link></li>
             </ul>
           </nav>
           <div className={`${styles.search}`}>

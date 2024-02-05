@@ -10,6 +10,7 @@ const OtherPosts = () => {
   const [loading, setLoading] = React.useState(false)
   const [error, setError] = React.useState<string | null>(null)
   const [tag, setTag] = React.useState('human')
+  const [active, setActive] = React.useState('human')
 
   const showPosts = async (limit: number) => {
     setLoading(true)
@@ -41,10 +42,10 @@ const OtherPosts = () => {
   return (
     <section className={styles.otherPosts}>
       <ul className={styles.category}>
-        <li onClick={() => setTag('human')}>Human</li>
-        <li onClick={() => setTag('pet')}>Pet</li>
-        <li onClick={() => setTag('mammal')}>Mammal</li>
-        <li onClick={() => setTag('canine')}>Canine</li>
+        <li className={tag === 'human' ? styles.active : ''} onClick={() => setTag('human')}>Human</li>
+        <li className={tag === 'pet' ? styles.active : ''} onClick={() => setTag('pet')}>Pet</li>
+        <li className={tag === 'mammal' ? styles.active : ''} onClick={() => setTag('mammal')}>Mammal</li>
+        <li className={tag === 'canine' ? styles.active : ''} onClick={() => setTag('canine')}>Canine</li>
       </ul>
       <div className={styles.leftPosts}>
         <div className={styles.posts}>
