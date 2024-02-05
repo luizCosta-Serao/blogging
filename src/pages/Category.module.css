@@ -1,0 +1,141 @@
+.imgCategory {
+  position: absolute;
+  top: 0;
+  height: 94.6vh;
+  object-fit: cover;
+}
+
+.contentCategory {
+  position: relative;
+  z-index: 20;
+}
+
+.titleCategory {
+  color: #fff;
+  font-size: 5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-top: 13rem;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  margin-top: 22rem;
+  margin-bottom: 3rem;
+  min-height: 500px;
+}
+
+.post {
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.post a {
+  width: 100%;
+}
+
+.image {
+  height: 400px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: .4s;
+  object-position: center;
+}
+
+.image:hover {
+  opacity: .8;
+}
+
+.title {
+  font-size: 2rem;
+  color: #121416;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.user img {
+  max-width: 40px;
+  border-radius: 50%;
+}
+
+.user span {
+  color: #121416;
+  font-weight: 600;
+}
+
+.text {
+  color: #6C757D;
+  font-size: .9rem;
+  margin-bottom: 1rem;
+}
+
+.viewPost {
+  border: none;
+  background-color: transparent;
+  color: #121416;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.viewPost:hover {
+  color: #444;
+}
+
+.viewPost::after {
+  content: '';
+  margin-top: .2rem;
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #121416;
+  transition: .4s;
+}
+
+.viewPost:hover::after {
+  background-color: #444;
+}
+
+.loadMore {
+  border: 2px solid #121416;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  display: flex;
+  margin: 2rem auto;
+  cursor: pointer;
+  transition: .4st;
+}
+
+.loadMore:hover {
+  background-color: #121416;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .posts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 678px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
