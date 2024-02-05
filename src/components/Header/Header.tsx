@@ -8,6 +8,10 @@ const Header = () => {
   const [menuMobile, setMenuMobile] = React.useState(false)
   const { pathname } = useLocation()
 
+  React.useEffect(() => {
+    setMenuMobile(false)
+  }, [pathname])
+
   function handleChange() { 
     setMenuMobile((menuMobile) => !menuMobile)
   }

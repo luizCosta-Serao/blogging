@@ -1,13 +1,13 @@
 .imgCategory {
   position: absolute;
   top: 0;
-  height: 94.6vh;
+  height: 100vh;
   object-fit: cover;
 }
 
 .contentCategory {
   position: relative;
-  z-index: 20;
+  z-index: 1;
 }
 
 .titleCategory {
