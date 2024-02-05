@@ -96,15 +96,17 @@ const PostPage = () => {
       <img src={post?.image} alt="" />
       <div className={styles.postContent}>
         <h1>{post.text}</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus cumque delectus, corporis at eum laborum temporibus neque numquam quidem magnam est laudantium. Itaque debitis nam soluta laudantium. Minus soluta quos delectus dolorum aspernatur sed, doloribus animi dolore fugit veritatis eligendi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolores obcaecati dolorem. Voluptas recusandae animi, dolorem amet quisquam voluptates quae exercitationem, rem autem obcaecati nostrum numquam aliquid! Quae, eius consequatur?</p>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus cumque delectus, corporis at eum laborum temporibus neque numquam quidem magnam est laudantium. Itaque debitis nam soluta laudantium. Minus soluta quos delectus dolorum aspernatur sed, doloribus animi dolore fugit veritatis eligendi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolores obcaecati dolorem. Voluptas recusandae animi, dolorem amet quisquam voluptates quae exercitationem, rem autem obcaecati nostrum numquam aliquid! Quae, eius consequatur?</p>        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus cumque delectus, corporis at eum laborum temporibus neque numquam quidem magnam est laudantium. Itaque debitis nam soluta laudantium. Minus soluta quos delectus dolorum aspernatur sed, doloribus animi dolore fugit veritatis eligendi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolores obcaecati dolorem. Voluptas recusandae animi, dolorem amet quisquam voluptates quae exercitationem, rem autem obcaecati nostrum numquam aliquid! Quae, eius consequatur?</p>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus cumque delectus, corporis at eum laborum temporibus neque numquam quidem magnam est laudantium. Itaque debitis nam soluta laudantium. Minus soluta quos delectus dolorum aspernatur sed, doloribus animi dolore fugit veritatis eligendi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas dolores obcaecati dolorem. Voluptas recusandae animi, dolorem amet quisquam voluptates quae exercitationem, rem autem obcaecati nostrum numquam aliquid! Quae, eius consequatur?</p>        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus cumque delectus, corporis at eum laborum temporibus neque numquam quidem magnam est laudantium. Itaque debitis nam soluta laudantium. Minus soluta quos delectus dolorum aspernatur sed, doloribus animi dolore fugit veritatis eligendi.</p>
+        <p>Em um mundo cheio de agitação, nada se compara à serenidade que um amigo peludo pode trazer para nossas vidas. Cães, esses seres incríveis, têm o dom de nos fazer sorrir nos dias mais cinzentos e preencher nossos corações com amor incondicional.</p>
+        <p>Em um mundo cheio de agitação, nada se compara à serenidade que um amigo peludo pode trazer para nossas vidas. Cães, esses seres incríveis, têm o dom de nos fazer sorrir nos dias mais cinzentos e preencher nossos corações com amor incondicional.</p>
+        <h2>I love dogs!!</h2>
+        <p>Desde as manhãs animadas até as noites aconchegantes no sofá, a jornada ao lado de um companheiro canino é repleta de momentos que aquecem a alma. A lealdade, a brincadeira inesgotável e até mesmo as travessuras fazem parte desse pacto único entre humanos e cães.</p>
+        <p>Neste espaço dedicado aos amantes de cachorros, celebramos a magia desses seres peludos. Compartilhamos histórias inspiradoras, dicas úteis para cuidar dos nossos amigos de quatro patas e exploramos a diversidade de raças que tornam o mundo canino tão fascinante.</p>
+        <p>Então, venha conosco nessa jornada repleta de alegria, lambidas e muitos momentos de puro amor. Porque, afinal, a vida com um cachorro é mais do que uma simples convivência; é uma experiência enriquecedora que nos ensina sobre compaixão, paciência e a verdadeira essência da amizade. 🐾✨ #VidaComCachorro #AmorCanino #RaboAbanando</p>
+        <p>Neste espaço dedicado aos amantes de cachorros, celebramos a magia desses seres peludos. Compartilhamos histórias inspiradoras, dicas úteis para cuidar dos nossos amigos de quatro patas e exploramos a diversidade de raças que tornam o mundo canino tão fascinante.</p>
+        <h2>Discover heartwarming stories, helpful tips, and irresistible moments of canine joy</h2>
+        <p>Neste espaço dedicado aos amantes de cachorros, celebramos a magia desses seres peludos. Compartilhamos histórias inspiradoras, dicas úteis para cuidar dos nossos amigos de quatro patas e exploramos a diversidade de raças que tornam o mundo canino tão fascinante.</p>
+        <p>Neste espaço dedicado aos amantes de cachorros, celebramos a magia desses seres peludos. Compartilhamos histórias inspiradoras, dicas úteis para cuidar dos nossos amigos de quatro patas e exploramos a diversidade de raças que tornam o mundo canino tão fascinante.</p>
+        <p>Neste espaço dedicado aos amantes de cachorros, celebramos a magia desses seres peludos. Compartilhamos histórias inspiradoras, dicas úteis para cuidar dos nossos amigos de quatro patas e exploramos a diversidade de raças que tornam o mundo canino tão fascinante.</p>
 
         <div className={styles.comments}>
           <h1>Comments: {comments && comments.total}</h1>
@@ -137,7 +139,7 @@ const PostPage = () => {
                   <img src={item.owner.picture} alt="" />
                   <span>{item.owner.firstName} {item.owner.lastName}</span>
                 </div>
-                <p className={styles.text}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, quas reiciendis! Facilis a soluta aliquam sit, labore nulla accusamus sed ut assumenda, qui ad molestiae officia repellendus ab ea magnam.</p>
+                <p className={styles.text}>Neste espaço dedicado aos amantes de cachorros, celebramos a magia desses seres peludos. Compartilhamos histórias inspiradoras, dicas úteis para cuidar dos nossos amigos de quatro patas e exploramos a diversidade de raças que tornam o mundo canino tão fascinante.</p>
                 <Link to={`/post/${item.id}`}>
                   <button className={styles.viewPost}>View Post</button>
                 </Link>

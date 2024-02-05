@@ -68,7 +68,7 @@ const PostsHome = () => {
             <img src={item.owner.picture} alt="" />
             <span>{item.owner.firstName} {item.owner.lastName}</span>
           </div>
-          <p className={styles.text}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, quas reiciendis! Facilis a soluta aliquam sit, labore nulla accusamus sed ut assumenda, qui ad molestiae officia repellendus ab ea magnam.</p>
+          <p className={styles.text}>Em um mundo cheio de agitação, nada se compara à serenidade que um amigo peludo pode trazer para nossas vidas. Cães, esses seres incríveis, têm o dom de nos fazer sorrir nos dias mais cinzentos e preencher nossos corações com amor incondicional.</p>
           <Link to={`/post/${item.id}`}>
             <button className={styles.viewPost}>View Post</button>
           </Link>
