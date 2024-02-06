@@ -40,3 +40,14 @@
   background-color: #000;
   color: #fff;
 }
+
+@media (max-width: 876px) {
+  .welcomeHome h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .welcomeHome p {
+    font-size: 1.2rem;
+  }
+}
