@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
+<h1>Descrição</h1>
+O site foi desenvolvido com o objetivo de simular um blog, que é dedicado a compartilhar informações, dicas e histórias sobre nossos amigos de quatro patas. Aqui você encontrará uma variedade de artigos relacionados a raças de cachorros, cuidados, treinamento e muito mais..
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1>Tecnologias utilizadas</h1>
+<ul>
+  <li>HTML: Linguagem de marcação utilizada para estruturar o conteúdo do site.</li>
+  <li>CSS: Linguagem de estilização utilizada para definir a aparência visual do site.</li>
+  <li>JavaScript: Linguagem de programação utilizada para adicionar interatividade e funcionalidades ao site.</li>
+  <li>React: uma biblioteca JavaScript para construir interfaces de usuário.</li>
+  <li>TypeScript: uma linguagem de programação que adiciona tipagem estática ao JavaScript.</li>
+</ul>
 
-Currently, two official plugins are available:
+<h1>Funcionalidades</h1>
+<ol>
+  <li>Página única para cada post</li>
+  <li>botão para carregar mais postagens</li>
+  <li>comentários e posts relacionados</li>
+</ol>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h1>Instalação</h1>
+<ul>
+  <li>Clone este repositório</li>
+  <li>Navegue até o diretório do projeto</li>
+  <li>Instale as dependências</li>
+  <li>Inicie o servidor</li>
+</ul>
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<h1>Contribuição</h1>
+Contribuições são bem-vindas! Se você quiser contribuir para o desenvolvimento deste projeto, siga em frente!
