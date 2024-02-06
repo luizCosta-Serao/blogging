@@ -18,7 +18,7 @@
 .postPage > img {
   position: absolute;
   top: 0;
-  height: 94.6vh;
+  height: 100vh;
   object-fit: cover;
 }
 
