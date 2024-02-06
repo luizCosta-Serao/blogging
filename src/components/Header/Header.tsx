@@ -23,25 +23,18 @@ const Header = () => {
         <div className={styles.logo}>
           <Link to='/'><img src={Logo} alt="Logo" /></Link>
         </div>
-        <div className={styles.menuAndLoupe}>
-          <nav>
-            <div onClick={handleChange}>
-              <button className={styles.btnMenuMobile}></button>
-            </div>
-            <ul className={`${styles.menu} ${menuMobile ? styles.active : ''}`}>
-              <li><Link className={pathname === '/' ? styles.active : ''} to='/'>Home</Link></li>
-              <li><Link className={pathname === '/human' ? styles.active : ''} to='/human'>With Humans</Link></li>
-              <li><Link className={pathname === '/pet' ? styles.active : ''} to='/pet'>Pet</Link></li>
-              <li><Link className={pathname === '/mammal' ? styles.active : ''} to='/mammal'>Mammal</Link></li>
-              <li><Link className={pathname === '/canine' ? styles.active : ''} to='/canine'>Canine</Link></li>
-            </ul>
-          </nav>
-          <div className={`${styles.search}`}>
-            <div className={styles.loupe}>
-              <img src={Loupe} alt="Loupe" />
-            </div>
+        <nav>
+          <div onClick={handleChange}>
+            <button className={styles.btnMenuMobile}></button>
           </div>
-        </div>
+          <ul className={`${styles.menu} ${menuMobile ? styles.active : ''}`}>
+            <li><Link className={pathname === '/' ? styles.active : ''} to='/'>Home</Link></li>
+            <li><Link className={pathname === '/human' ? styles.active : ''} to='/human'>With Humans</Link></li>
+            <li><Link className={pathname === '/pet' ? styles.active : ''} to='/pet'>Pet</Link></li>
+            <li><Link className={pathname === '/mammal' ? styles.active : ''} to='/mammal'>Mammal</Link></li>
+            <li><Link className={pathname === '/canine' ? styles.active : ''} to='/canine'>Canine</Link></li>
+          </ul>
+        </nav>
       </header>
     </>
   )
