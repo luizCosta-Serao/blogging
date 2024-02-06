@@ -28,7 +28,7 @@
   padding: 1rem;
 }
 
-.postContent > h1 {
+.postContent > h1 { 
   font-size: 4rem;
   position: relative;
   z-index: 15;
@@ -37,8 +37,8 @@
   display: flex;
   justify-content: center;
   align-items: end;
-  height: 80vh;
-  margin-bottom: 4rem;
+  height: 90vh;
+  padding-bottom: 4rem;
 }
 
 .postContent > p {
@@ -189,6 +189,28 @@
 
 .viewPost:hover::after {
   background-color: #444;
+}
+
+@media (max-width: 876px) {
+  .postContent h1 {
+    font-size: 3.5rem;
+  }
+
+  .postContent p {
+    font-size: 1.3rem;
+  }
+
+  .postContent h2 {
+    font-size: 2rem;
+  }
+
+  .comments h1 {
+    font-size: 2rem;
+  }
+
+  .comment {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 1200px) {
